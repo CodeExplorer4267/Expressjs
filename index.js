@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
   res.send('Hello World')
 })
 app.get('/profile', function (req, res) {
-  res.render("profile")
+  res.render("profile",{age:34})
 })
 
 app.get('/profile/:username',(req,res)=>{//zekono username dite pari
@@ -20,7 +20,7 @@ app.get('/profile/:username',(req,res)=>{//zekono username dite pari
 })
 
 app.get('/contact',(req,res)=>{
-  res.render("contact")
+  res.render("contact",{num:573938})
 })
 
 app.listen(port,()=>{
